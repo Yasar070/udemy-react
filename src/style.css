@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "Gabarito", sans-serif;
+}
+/* navbar section */
+.popup{
+    position: relative;
+    
+    
+    
+}
+.popup p{
+    position: absolute;
+    width: 70px;
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    right: 90px;
+    display:none ;  
+  
+}
+.navbar__sec3:hover p{
+   
+    cursor: pointer;
+    display: block;
+   
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 5px;
+align-items: center;
+  
+
+}
+.navbar__sec1{
+    color: #8710D8;
+
+    
+}
+.navbar__sec2{
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+
+}
+.navbar__sec2 input{
+  
+  order: solid 1px black;
+    border-radius: 20px;
+    padding: 10px;
+
+width: 600px;
+   
+}
+.navbar__sec2 input:focus{
+    outline: none;
+}
+.navbar__sec3{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar__course{
+    display: flex;
+}
+/* categories */
+.navbar__categories{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar__categories p{
+    background-color: #8710D8;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px #8710D8 solid;
+    border-radius: 20px;
+    transition: 2s;
+}
+.navbar__categories p:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.navbar__course{
+    gap: 10px;
+    justify-content: space-around;
+   display: flex;
+   padding: 10px;
+   margin: 10px;
+ 
+}
+/* sale image */
+.offerbox{
+    width: 600px;
+    position: absolute;
+    top: 160px;
+    z-index: 1;
+    background-color:white;
+   color: black;
+   margin-bottom: 10px;
+   padding: 10px;
+   height: 100px;
+   transition: 1s;
+   margin-left: 10px;
+   margin-top: 10px;
+   
+}
+.planbox{
+    width: 100px;
+    position: absolute;
+    background-color:#8710D8;
+   color:white;
+   padding: 10px;
+   border: black 2px solid;
+  
+}
+.salesimage h1,p{
+    margin: 10px;
+z-index: 0;
+position: relative;
+display: flex;
+}
+.salesimage img{
+    width: 100%;
+   
+}
+
+.coursecard1{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 10px;
+   
+
+
+}
+.coursecard1 img{
+    width: 280px;
+    height: 180px;
+
+}
+
+/* topics */
+.topicsbox{
+    margin: 10px;
+}
+.recommendedbox{
+    display:flex ;
+    justify-content: space-around; 
+   
+}
+.recommendedbox2{
+    display:flex ;
+    justify-content: space-around;
+
+  
+}
+.recommendedbox p{
+    border: solid black 2px;
+    padding: 10px;
+    margin: 10px;
+    width:300px
+}
+.recommendedbox2 p{
+    border: solid black 2px;
+    padding: 10px;
+    margin: 10px;
+    width:300px
+}
+/* end box */
+.endbox{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+.endbox p{
+    
+    margin: 10px;
+    padding: 10px;
+}
+.udemytag{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+   
+}
+@media screen and (max-width:500px){
+    body{
+        font-size: 10px;
+       
+    }
+.navbar__course{
+    width: 40%;
+}
+.navbar__categories{
+    display: none;
+}
+.navbar__sec2,.navbar__sec3{
+    display: none;
+}
+.offerbox{
+    position: absolute;
+    top: 30px;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.planbox{
+    position: absolute;
+    top: 90px;
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+}
+/* tab view */
+@media screen and (min-width:800px){
+   .coursecard1{
+    width: 50%;
+   }
+   .offerbox{
+    width: 50%;
+    margin-top: 20px;
+   }
+   .navbar__sec1,.navbar__sec2,.navbar__sec3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+   }
+}
